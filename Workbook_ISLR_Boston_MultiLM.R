@@ -14,3 +14,4 @@ summary(mod2)
 # abline(mod2)
 
 mod3<- lm(medv ~ ., data= Boston)      #LM between all the variables 
+summary(mod3)
