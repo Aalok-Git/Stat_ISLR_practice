@@ -41,3 +41,4 @@ plot(predict(lm.fit), rstudent(lm.fit))
 
 plot(hatvalues(lm.fit))
 which.max(hatvalues(lm.fit))
+str(lm.fit)
