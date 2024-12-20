@@ -21,3 +21,5 @@ vif(mod3)            #variance inflation factors
 
 mod4<- lm(medv ~ . -lstat, data= Boston)        #this excludes the lstat column from the LM consideration
 summary((mod4))
+
+# update()
