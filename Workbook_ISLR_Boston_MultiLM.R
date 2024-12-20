@@ -15,3 +15,9 @@ summary(mod2)
 
 mod3<- lm(medv ~ ., data= Boston)      #LM between all the variables 
 summary(mod3)
+# ?summary.lm              #to check the summary.lm document
+summary(mod3)$fstatistic
+vif(mod3)            #variance inflation factors
+
+mod4<- lm(medv ~ . -lstat, data= Boston)        #this excludes the lstat column from the LM consideration
+summary((mod4))
